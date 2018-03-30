@@ -23,6 +23,8 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import java.util.HashMap;
 import java.util.Map;
 
+
+
 @Configuration
 @ControllerAdvice
 @SpringBootApplication
@@ -74,4 +76,9 @@ public class SpringbootShiroApplication {
     public Subject subject() {
         return SecurityUtils.getSubject();
     }
+
+    /**
+     * shiro框架的三大基本组件：Subject,SecurityManager,Realms
+     */
+
 }
